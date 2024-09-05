@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaGalaxy</title> <!-- тут можно написать любое название -->
+    <link rel="stylesheet" href="style.css"> <!-- подключили стили из отдельного файла -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- подключаем новый шрифт -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>MediaGalaxy</h1>
+        <p>Ваш гид в удивительный мир икно</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Главная</a> |
+        <a href="#">Фильмы</a> |
+        <a href="#">Сериалы</a> |
+        <a class="selected" href="#">Наши контакты</a> | <!-- добавили класс -->
+        <a href="#">Поиск</a>
+    </nav>
+
+    <main>
+        <div class="contacts">
+
+            <!-- Основная контактная информация -->
+            <div class="contact-info">
+                <h3>Наш адрес</h3>
+                <p>г. Пример, ул. Примерная, д. 27</p>
+                <div class="office-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.263179642693!2d37.61822007704595!3d55.75393027308467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506b52311f!2z0JrRgNCw0YHQvdCw0Y8g0J_Qu9C-0YnQsNC00Yw!5e0!3m2!1sru!2sru!4v1692365029622!5m2!1sru!2sru" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <h3>Наш телефон</h3>
+                <a href="tel:+71234567890">+7 (123) 456-7890</a>
+                <!-- в качестве адреса для ссылки можно указывать номер телефона -->
+                <h3>Наша почта</h3>
+                <a href="mailto:info@example.com">info@example.com</a> <!-- или адрес элкетронной почты -->
+            </div>
+
+            <!-- Заголовок перед формой обратной связи -->
+            <div class="feedback">
+                <h2>Свяжитесь с нами</h2>
+                <!-- Форма обратной связи -->
+                <div class="contact-form">
+                    <form action="/submit" method="post">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Сообщение:</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Футер сайта -->
+    <footer>
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <!-- текст можно вставить любой -->
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Фильмы</a></li>
+                <li><a href="#">Сериалы</a></li>
+                <li><a href="#">О нас</a></li>
+            </ul>
+        </div>
+        <div class="footer-section"> <!-- добавили класс  -->
+            <p class="copyright-text">&copy; 2023 MediaGalaxy</p>
+            <!-- в HTML знак копирайта задается с помощью записи &copy -->
+            <div class="footer-images">
+                <a href="#"><img src="telegram.png" alt="" width="20px" height="20px"></a>
+                <a href="#"><img src="whatsapp.png" alt="" width="20px" height="20px"></a>
+                <a href="#"><img src="facebook.png" alt="" width="20px" height="20px"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
